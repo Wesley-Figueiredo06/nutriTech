@@ -1,0 +1,87 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(275deg, #98f3bd 40%, #27df99 100%);
+}
+
+.formConteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    width: 300px;
+    background: linear-gradient(-275deg, #89e0c2 30%, #099c64 120%);
+    border-style: groove;
+    border-width: 1.5px;
+    border-color: #7fbda5;
+}
+
+.inputConteiner {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    label {
+        font-weight: 600;
+    }
+
+    #userInput,
+    #passwordInput {
+        border: none;
+        border-radius: 100px;
+        text-align: center;
+    }
+
+}
+
+.buttonConteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+#btnSubmit {
+    width: 167px;
+    border: none;
+    transition: 0.5s;
+    border-radius: 100px;
+}
+
+#btnSubmit:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #92d6bc;
+    cursor: pointer;
+    border-inline-style: groove;
+    border-width: 1px;
+}
+
+#btnCreate {
+    width: 167px;
+    border: none;
+    transition: 0.5s;
+    border-radius: 100px;
+}
+
+#btnCreate:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #92d6bc;
+    cursor: pointer;
+    border-inline-style: groove;
+    border-width: 1px;
+
+}
