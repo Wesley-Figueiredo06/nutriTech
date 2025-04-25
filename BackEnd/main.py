@@ -1,1 +1,3 @@
-class.name = str(""); 
+teste = "olá mundo!"
+
+print(teste)
