@@ -4,30 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/icons/chef-hat.png" type="image/png">
+    <link rel="shortcut icon" href="./assets/img/diet.png" type="image/png">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>NutriTech</title>
 </head>
 
 <body>
-
     <div class="formConteiner">
         <form id="form">
             <div class="inputConteiner">
-                <h2 style="color:white;"><img style="display: flex; justify-self: center;"
-                        src="./assets/icons/chef-hat.png"> NutriTech
+                <h2 class="h2Title"><img width="25px" height="25px" style="display: flex; justify-self: center;"
+                        src="./assets/img/diet.png">
+                    NutriTech
                 </h2>
+
                 <label>Usuário:</label>
-                <input id="userInput" type="text">
+                <input id="userInput" type="text" placeholder="Digite seu usuário aqui...">
+
                 <label>Senha:</label>
-                <input id="passwordInput" type="text">
-                <div class="buttonConteiner">
-                    <button id="btnSubmit" type="submit">Logar</button>
-                </div>
+                <input id="passwordInput" type="password" placeholder="Digite sua senha aqui...">
+
+                <button id="btnSubmit" type="submit">Entrar</button>
                 <button id="btnCreate" type="button">Cadastrar</button>
+
             </div>
+            <p>Esqueceu sua senha? <a href="">Clique aqui!</a></p>
         </form>
     </div>
+
 
 </body>
 <script type="module" src="./assets/js/index.js"></script>

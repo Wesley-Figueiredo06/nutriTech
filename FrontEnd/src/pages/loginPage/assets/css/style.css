@@ -3,6 +3,12 @@
     padding: 0%;
 }
 
+@font-face {
+    font-family: "NutriTech";
+    src: url("../fonts/NutriTech/NutriTech.otf");
+    types: otf;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -12,17 +18,89 @@ body {
     background: linear-gradient(275deg, #98f3bd 40%, #27df99 100%);
 }
 
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes horizontalSlideL {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes horizontalSlideR {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
 .formConteiner {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 320px;
+    height: 350px;
     width: 300px;
-    background: linear-gradient(-275deg, #89e0c2 30%, #099c64 120%);
+    background: linear-gradient(-275deg, rgba(137, 224, 194, 0.7) 30%, rgba(9, 156, 100, 0.7) 120%);
     border-style: groove;
     border-width: 1.5px;
+    border-radius: 20px;
     border-color: #7fbda5;
+    animation: slideFromTop 1.2s ease-out forwards;
+
+    p {
+        margin-top: 30px;
+        font-family: nutritech;
+        color: #324237;
+
+        a {
+            font-family: nutritech;
+            color: #324237;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #84a196;
+        }
+
+        animation: horizontalSlideL 2s ease-out forwards;
+
+    }
+}
+
+.h2Title {
+    font-family: nutritech;
+    color: #40af65;
+    animation: horizontalSlideL 2s ease-out forwards;
+
+    img {
+        position: relative;
+        bottom: 10px;
+    }
 }
 
 .inputConteiner {
@@ -34,7 +112,10 @@ body {
     gap: 15px;
 
     label {
-        font-weight: 600;
+        font-family: nutritech;
+        color: #324237;
+        animation: horizontalSlideR 2s ease-out forwards;
+
     }
 
     #userInput,
@@ -42,40 +123,31 @@ body {
         border: none;
         border-radius: 100px;
         text-align: center;
+        animation: horizontalSlideL 2s ease-out forwards;
+
     }
 
+    #userInput::placeholder,
+    #passwordInput::placeholder {
+        font-family: nutritech;
+        font-size: 12px;
+        color: #40af65;
+        opacity: 60%;
+    }
 }
 
-.buttonConteiner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-}
-
-#btnSubmit {
-    width: 167px;
-    border: none;
-    transition: 0.5s;
-    border-radius: 100px;
-}
-
-#btnSubmit:hover {
-    font-weight: bold;
-    color: white;
-    background-color: #92d6bc;
-    cursor: pointer;
-    border-inline-style: groove;
-    border-width: 1px;
-}
-
+#btnSubmit,
 #btnCreate {
     width: 167px;
     border: none;
-    transition: 0.5s;
+    transition: 0.4s;
     border-radius: 100px;
+    font-family: nutritech;
+    color: #324237;
+    animation: horizontalSlideR 2s ease-out forwards;
 }
 
+#btnSubmit:hover,
 #btnCreate:hover {
     font-weight: bold;
     color: white;
@@ -83,5 +155,4 @@ body {
     cursor: pointer;
     border-inline-style: groove;
     border-width: 1px;
-
 }
