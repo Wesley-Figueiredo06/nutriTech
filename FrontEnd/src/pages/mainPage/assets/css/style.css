@@ -1,0 +1,109 @@
+:root {
+    --main-bg: linear-gradient(275deg, #98f3bd 40%, #27df99 100%);
+    --secund-bg: linear-gradient(-275deg, #89e0c2b3 30%, #099c64b3 120%);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--main-bg);
+}
+
+@font-face {
+    font-family: "NutriTech";
+    src: url("../fonts/NutriTech/NutriTech.otf");
+    types: otf;
+}
+
+.headerConteiner header {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+    user-select: none;
+    background: var(--secund-bg);
+    border-color: #7fbda5;
+    border-style: groove;
+    border-width: 1.5px;
+
+    a {
+        color: inherit;
+    }
+}
+
+
+.mainLogoType {
+    font-family: nutritech;
+    color: #40af65;
+    font-weight: bold;
+}
+
+.search form {
+    display: flex;
+    justify-self: center;
+
+    #textSearch {
+        width: 500px;
+        height: 25px;
+        border: none;
+        border-color: #7fbda5;
+        border-style: groove;
+        border-width: 0.7px;
+        border-inline: none;
+        outline: none;
+        font-family: nutritech;
+        color: #7fbda5;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #textSearch:focus,
+    #textSearch::placeholder {
+        outline: none;
+        font-family: nutritech;
+        color: #7fbda5;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    #btnSubmit {
+        border: none;
+        width: 20px;
+        border-color: #7fbda5;
+        border-style: groove;
+        border-width: 0.7px;
+    }
+
+    #btnSubmit:hover {
+        cursor: pointer;
+        background: #89a79cb3;
+    }
+}
+
+.search {
+    display: flex;
+    align-self: center;
+    width: auto;
+}
+
+.settings {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #40af65;
+
+}
