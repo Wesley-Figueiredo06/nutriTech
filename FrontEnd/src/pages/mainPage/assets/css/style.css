@@ -16,7 +16,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 100vh;
     background: var(--main-bg);
+
 }
 
 @font-face {
@@ -26,6 +28,7 @@ body {
 }
 
 .headerConteiner header {
+    position: relative;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -37,10 +40,13 @@ body {
     border-color: #7fbda5;
     border-style: groove;
     border-width: 1.5px;
+    z-index: 0;
 
     a {
         color: inherit;
     }
+
+
 }
 
 
@@ -106,4 +112,71 @@ body {
     gap: 10px;
     color: #40af65;
 
+}
+
+.mainConteiner {
+    display: flex;
+    align-self: center;
+    width: 200px;
+    height: 100%;
+    background-color: #40af65;
+
+
+    position: relative;
+    top: -400px;
+    z-index: 0;
+}
+
+.navTable {
+    /* display: none; */
+    background-color: #548d77;
+    position: relative;
+    top: -66px;
+    width: 160px;
+    height: 200%;
+    border: none;
+    border-color: #7fbda5;
+    border-style: groove;
+    border-width: 1.5px;
+    border-radius: 3%;
+
+    z-index: 1;
+
+    table {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        bottom: -100px;
+        position: relative;
+        font-family: nutritech;
+
+
+
+        tbody {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            tr {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: 100px;
+                height: 20px;
+                background-color: #27df99;
+
+
+                td {
+                    display: flex;
+                    justify-self: center;
+                    align-self: center;
+                    text-align: left;
+                    background-color: #40af65;
+                    width: 100px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
 }
