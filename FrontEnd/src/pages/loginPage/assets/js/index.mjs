@@ -14,7 +14,6 @@ form.addEventListener("submit", (e) => {
     } else {
         alert("usuario e senha errados!")
     }
-
 });
 
 
