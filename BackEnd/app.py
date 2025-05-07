@@ -4,6 +4,8 @@ from flask_cors import CORS
 from routes.login import login_bp
 from routes.cadastro import cadastro_bp
 
+var = "route"
+
 app = Flask(__name__)
 CORS(app)
 
