@@ -141,42 +141,22 @@ body {
     border-radius: 3%;
 
     z-index: 1;
+}
 
-    table {
+#navTable {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+    position: relative;
+    font-family: nutritech;
+    background-color: #505050b3;
+    gap: 5px;
+
+
+    button {
         display: flex;
-        justify-content: center;
-        height: 100%;
-        bottom: -100px;
-        position: relative;
-        font-family: nutritech;
-
-
-
-        tbody {
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-
-            tr {
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                width: 100px;
-                height: 20px;
-                background-color: #27df99;
-
-
-                td {
-                    display: flex;
-                    justify-self: center;
-                    align-self: center;
-                    text-align: left;
-                    background-color: #40af65;
-                    width: 100px;
-                    cursor: pointer;
-                }
-            }
-        }
-
+        flex-direction: column;
     }
+
 }
